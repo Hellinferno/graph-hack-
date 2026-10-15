@@ -4,23 +4,23 @@ import { NODE_LABELS } from '../events';
 export const LABEL_COLORS: Record<NodeLabel, string> = {
   Vulnerability: '#ff5c6c',
   Package: '#ff9f43',
-  Function: '#9fb3c8',
-  Service: '#3fa7f5',
-  IAMRole: '#f5c542',
-  Database: '#c77dff',
-  Developer: '#2ed3a3',
-  Incident: '#ff7ab6',
-  ActionAudit: '#7ee7fc',
+  Function: '#94a3b8',
+  Service: '#14b8a6',
+  IAMRole: '#f59e0b',
+  Database: '#c084fc',
+  Developer: '#10b981',
+  Incident: '#f43f5e',
+  ActionAudit: '#a78bfa',
 };
 
-export const UNKNOWN_NODE_COLOR = '#6b7f94';
+export const UNKNOWN_NODE_COLOR = '#64748b';
 
 export const HIGHLIGHT_COLORS: Record<HighlightStyle, string> = {
   attack: '#ff4d5e',
-  chokepoint: '#ffb020',
-  quarantined: '#38d996',
-  safe: '#4da3ff',
-  proof: '#b48cff',
+  chokepoint: '#ffaa00',
+  quarantined: '#00e599',
+  safe: '#00e599',
+  proof: '#c084fc',
 };
 
 export const HIGHLIGHT_LABELS: Record<HighlightStyle, string> = {
@@ -31,8 +31,8 @@ export const HIGHLIGHT_LABELS: Record<HighlightStyle, string> = {
   proof: 'Decision proof',
 };
 
-export const EDGE_ACTIVE_COLOR = 'rgba(134, 160, 184, 0.35)';
-export const EDGE_SEVERED_COLOR = '#38d996';
+export const EDGE_ACTIVE_COLOR = 'rgba(148, 163, 184, 0.3)';
+export const EDGE_SEVERED_COLOR = '#00e599';
 
 export function primaryLabel(labels: string[]): NodeLabel | null {
   for (const label of NODE_LABELS) {

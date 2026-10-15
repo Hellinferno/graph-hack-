@@ -96,10 +96,18 @@ export default function Header({ health, healthError, overview, snapshot, mock, 
           )}
         </div>
         <a className="btn btn--ghost" href={health?.falkordb_browser_url || FALKORDB_BROWSER_URL} target="_blank" rel="noreferrer">
-          FalkorDB Browser
+          <span>FalkorDB Browser</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.7 }}>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
         </a>
-        <button type="button" className="btn" onClick={onReseed} disabled={reseeding || running} title={running ? 'Wait for the current run to finish' : undefined}>
-          {reseeding ? 'Reseeding…' : 'Reseed graph'}
+        <button type="button" className="btn btn--outline" onClick={onReseed} disabled={reseeding || running} title={running ? 'Wait for the current run to finish' : undefined}>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.8 }}>
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+          </svg>
+          <span>{reseeding ? 'Reseeding…' : 'Reseed graph'}</span>
         </button>
       </div>
     </header>
