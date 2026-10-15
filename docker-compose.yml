@@ -1,0 +1,23 @@
+# FalkorDB + FalkorDB Browser for AegisGraph.
+# Host ports come from .env (FALKORDB_PORT / FALKORDB_BROWSER_PORT) and default to 6379 / 3000.
+# On Windows, if `docker compose up` fails with "bind: An attempt was made to access a socket in a way
+# forbidden by its access permissions", the port sits in a Hyper-V reserved range
+# (check: netsh interface ipv4 show excludedportrange protocol=tcp) - set FALKORDB_PORT=16379 in .env.
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: aegis-falkordb
+    ports:
+      - "127.0.0.1:${FALKORDB_PORT:-6379}:6379"           # FalkorDB RESP port, loopback only (it has no password)
+      - "127.0.0.1:${FALKORDB_BROWSER_PORT:-3000}:3000"   # FalkorDB Browser UI, loopback only
+    volumes:
+      - falkordb_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "6379", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  falkordb_data:
