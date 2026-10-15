@@ -6,9 +6,20 @@
 |---|---|
 | Hackathon | [Graph Hacks: Context for AI Agents](https://www.wemakedevs.org/hackathons/falkordb) (WeMakeDevs x FalkorDB) |
 | Track | **Track 01: Agents That Act on Connected Data** |
-| Demo video | `<add link>` |
+| Demo video | [▶ Watch 1080p Walkthrough (aegisgraph_demo.mp4)](https://github.com/Hellinferno/graph-hack-/blob/main/aegisgraph_demo.mp4) |
 | Live deployment | Local setup below (`<add link if deployed>`) |
-| Blog post | `<add link>` |
+| Blog post | [Read Hackathon Technical Deep-Dive (docs/BLOG_POST.md)](docs/BLOG_POST.md) |
+
+## 🎥 Demo Walkthrough Video
+
+https://github.com/Hellinferno/graph-hack-/blob/main/aegisgraph_demo.mp4
+
+<div align="center">
+  <video src="https://github.com/Hellinferno/graph-hack-/raw/main/aegisgraph_demo.mp4" controls width="100%" style="border-radius: 8px; max-width: 900px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+    Your browser does not support the video tag.
+  </video>
+  <p>🎬 <b><a href="https://github.com/Hellinferno/graph-hack-/blob/main/aegisgraph_demo.mp4">Click here to play the 1080p walkthrough directly in GitHub's video player</a></b></p>
+</div>
 
 ## What it does
 
