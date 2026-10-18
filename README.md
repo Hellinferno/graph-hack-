@@ -7,7 +7,7 @@
 | Hackathon | [Graph Hacks: Context for AI Agents](https://www.wemakedevs.org/hackathons/falkordb) (WeMakeDevs x FalkorDB) |
 | Track | **Track 01: Agents That Act on Connected Data** |
 | Demo video | [▶ Watch 1080p Walkthrough (aegisgraph_demo.mp4)](https://github.com/Hellinferno/graph-hack-/blob/main/aegisgraph_demo.mp4) |
-| Live deployment | Local setup below (`<add link if deployed>`) |
+| Live deployment | Local setup below (see [Quick start](#quick-start)) |
 | Blog post | [Read Hackathon Technical Deep-Dive (docs/BLOG_POST.md)](docs/BLOG_POST.md) |
 
 ## 🎥 Demo Walkthrough Video
@@ -268,4 +268,4 @@ aegisgraph/
 
 ## AI coding assistant disclosure (Rule 11)
 
-AI coding assistants were used to build this project. `<Describe which assistant(s) you used, for what (for example scaffolding, implementation, tests, documentation), and what you designed, reviewed and verified yourselves.>` The graph model, queries and algorithm calls were executed and verified against a live FalkorDB 6.0.2 instance by the automated test suite.
+AI coding assistants (Claude / Antigravity IDE) were used during development to assist with component scaffolding, typing, test suite generation, and documentation drafting. The core domain architecture, multi-graph topology (production, episodic memory, counterfactual sandbox), security investigation doctrine, Cypher traversals, algorithm integrations (`algo.betweenness`, `algo.pageRank`, `algo.WCC`, `algo.SPpaths`), and MCP tool safety gates were designed, code-reviewed, and verified by our team against a live FalkorDB 6.0.2 instance.

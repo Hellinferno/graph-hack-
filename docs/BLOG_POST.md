@@ -81,4 +81,4 @@ The agent never imports its own tool functions. It spawns an MCP server over std
 - **Make every result carry its own proof.** Each tool returns the Cypher it ran with server timings. Our query documentation is generated from those traces, so it can't drift from the code.
 - **Multi-graph is a feature, not a detail.** Production, memory and per-incident sandboxes in one FalkorDB instance made "look before you leap" one command.
 
-The code, the graph model and every query are in the repository: `<add link>`.
+The code, the graph model and every query are in the repository: [https://github.com/Hellinferno/graph-hack-](https://github.com/Hellinferno/graph-hack-).
